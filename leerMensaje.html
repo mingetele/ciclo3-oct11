@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="myScrpt.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+   
+    body {
+        
+        min-height:100vh;
+        background: linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)),
+        url("fondo1.jpg") no-repeat center center fixed;
+        background-size: cover;
+       
+        
+        text-align: center;
+        
+        
+    }
+
+    
+
+    h1{color:wheat;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    
+    button{
+        color: rgb(138, 16, 16);
+        text-align: center;
+        font-size: x-large;
+        border-bottom: 1ch;
+        
+       
+    }
+
+    table{
+        margin: 0 auto;
+        height: 200px;
+        width: 800px;
+        color: white;
+        font-size: xx-large;
+        font-style: oblique;
+        text-align: center;
+    }
+
+ div{
+    color: whitesmoke;
+    text-align: justify;
+    font-size: x-large;
+    font-style: italic;    
+    line-height: 180%;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    
+ }
+    
+
+</style>
+
+</head>
+<body>
+    
+
+    
+    <h1>Clientes<br></h1>
+    
+    <button onclick="guardarCliente()">GUARDAR CLIENTES</button>
+    <button onclick="editarCliente()">ACTUALIZAR CLIENTES</button>
+    <button onclick="leerClientes()">TRAER CLIENTES</button><br>
+    <br>
+    <br>
+
+    
+    <table border="1">
+        
+    <tr>
+        <td width="504">Id de Cliente:</td>
+        <td width="504"><input type="number" id="idCliente"></td>
+    </tr>
+
+    <tr>
+        <td width="504">Nombre de Cliente: </td>
+        <td width="504"><input type="text" id="nombreCliente"></td>
+
+    </tr>  
+    
+    <tr>
+        <td width="504">Correo de Cliente: </td>
+        <td width="504"><input type="text" id="mailCliente"></td>
+    </tr>
+
+    <tr>
+        <td width="504">Edad de Cliente:</td>
+        <td width="504"><input type="number" id="edadCliente"></td>
+    </tr>
+
+    
+    <br>
+    <br>    
+
+
+
+    <div id="listaClientes" >
+            
+        
+
+    </div>
+    
+
+    
+</body>
+</html>

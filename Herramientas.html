@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="herramientas.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+   
+    body {
+        
+        min-height:100vh;
+        background: linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)),
+        url("fondo1.jpg") no-repeat center center fixed;
+        background-size: cover;
+       
+        
+        text-align: center;
+        
+        
+    }
+
+    
+
+    h1{color:wheat;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    
+    button{
+        color: rgb(138, 16, 16);
+        text-align: center;
+        font-size: x-large;
+        border-bottom: 1ch;
+        
+       
+    }
+
+    table{
+        margin: 0 auto;
+        height: 200px;
+        width: 800px;
+        color: white;
+        font-size: xx-large;
+        font-style: oblique;
+        text-align: center;
+    }
+
+ div{
+    color: whitesmoke;
+    text-align: justify;
+    font-size: x-large;
+    font-style: italic;    
+    line-height: 180%;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    
+ }
+ a{color:wheat;
+        text-align: left;
+        font-size: 30px;
+        position: absolute;
+        left: 5%;
+        top: 80%;
+    }
+    
+
+</style>
+
+</head>
+<body>
+    
+
+    
+    <h1>Herramientas<br></h1>
+    
+    <button onclick="guardarHerra()">GUARDAR HERRAMIENTA</button>
+    <button onclick="editarHerra()">ACTUALIZAR HERRAMIENTA</button>
+    <button onclick="leerHerra()">TRAER HERRAMIENTA</button><br>
+    <br>
+    <br>
+
+    
+    <table border="1">
+        
+    <tr>
+        <td width="504">Id de Herramienta:</td>
+        <td width="504"><input type="number" id="idHerramienta"></td>
+    </tr>
+
+    <tr>
+        <td width="504">Marca de Herramienta: </td>
+        <td width="504"><input type="text" id="brand"></td>
+
+    </tr>  
+    
+    <tr>
+        <td width="504">Modelo de Herramienta: </td>
+        <td width="504"><input type="number" id="model"></td>
+    </tr>
+
+    <tr>
+        <td width="504">Categoria de Herramienta:</td>
+        <td width="504"><input type="number" id="category_id"></td>
+    </tr>
+
+    <tr>
+        <td width="504">Nombre de Herramienta:</td>
+        <td width="504"><input type="text" id="nameHerramienta"></td>
+    </tr>
+
+    
+    <br>
+    <br>    
+
+
+
+    <div id="listaHerramientas" >
+            
+        
+
+    </div>
+    
+    <a href="Reto3.html">Regresar a menu Principal</a>+" "+" "+
+    
+</body>
+</html>
